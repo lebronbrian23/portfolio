@@ -140,14 +140,13 @@ main{
 /** about */
 #about {
     text-align: center;
-    height: 613px;
 }
 .about-info {
     display: grid;
     grid-template-areas: 'profile-pic about-desc';
     grid-template-columns: auto auto;
     gap: 87px;
-
+    height: 613px;
 }
 .profile-pic{
     grid-area: profile-pic;
@@ -354,9 +353,7 @@ footer p{
         line-height: 15px;
     }
     /** about media queries*/
-    #about{
-        height: 500px;
-    }
+
     .about-info{
         grid-template-areas:
                 'profile-pic'
@@ -369,7 +366,6 @@ footer p{
     /* skills media queries*/
     #skills{
         text-align: left;
-        position: absolute;
     }
     #skills h2{
         text-align: center;
@@ -382,42 +378,20 @@ footer p{
     .skills div > i{
         font-size: 55px !important;
     }
-    /*popular menu  media queries*/
-    .popular-menu {
+    /*featured works  media queries*/
+    .featured-works{
         grid-template-areas:
-                'menu-image1'
-                'menu-image2'
-                'menu-image3';
-        height:auto;
+                'work-1'
+                'work-2';
     }
-
-    /*gallery media queries*/
-    .gallery{
-        grid-template-areas:
-            'big-image big-image'
-            'gallery-image1 gallery-image2'
-            'gallery-image3 gallery-image4';
-        grid-template-columns: auto auto;
-        grid-template-rows: 5fr 1.5fr 1.5fr ;
-    }
-    /*events media queries*/
-    .events-images{
-        grid-template-areas:
-                'event-image1 event-image2';
-        grid-template-columns: 1fr 1fr;
+    .address{
         height: auto;
     }
-    /*footer media queries*/
-    .footer-section {
-        padding:  0;
+    /*contact me media queries*/
+    #contact-me{
         grid-template-areas:
-                'extra-links extra-links extra-links'
-                'address address address'
-                'social-media social-media social-media';
-    }
-    #address,
-    #social-media{
-        padding: 40px;
+                'address'
+                'contact-form';
     }
 
 }
@@ -436,26 +410,5 @@ footer p{
         line-height: 10px;
     }
 
-    /*featured patterns media queries*/
-    .featured-patterns{
-        grid-template-areas:
-                'pattern-logo1 pattern-logo1 pattern-logo1 pattern-logo1'
-                'pattern-logo2 pattern-logo2 pattern-logo2 pattern-logo2'
-                'pattern-logo3 pattern-logo3 pattern-logo3 pattern-logo3'
-                'pattern-logo4 pattern-logo4 pattern-logo4 pattern-logo4'
-                'pattern-logo5 pattern-logo5 pattern-logo5 pattern-logo5';
-    }
-
-    /*events media queries*/
-    .events-images{
-        grid-template-areas:
-                'event-image1 event-image1'
-                'event-image2 event-image2';
-        height: auto;
-    }
-    /*bottom footer  media queries*/
-    .footer-bottom > li {
-        padding-left: 15px;
-    }
 
 }
