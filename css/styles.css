@@ -14,6 +14,7 @@ html {
 }
 
 body{
+    font-family: 'Nunito';
     font-style: normal;
     line-height: 1.3em;
     margin: 0;
@@ -43,6 +44,12 @@ a:active{
 }
 strong{
     color: black;
+}
+p{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
 }
 /**Header styles */
 
@@ -146,15 +153,22 @@ main{
     grid-template-areas: 'profile-pic about-desc';
     grid-template-columns: auto auto;
     gap: 87px;
-    height: 613px;
+    height: 545px;
 }
 .profile-pic{
     grid-area: profile-pic;
 }
 .about-desc{
     grid-area: about-desc;
+    text-align: left;
+    right: 105px;
+    margin-right:1em;
+;
 }
 
+.profile-pic-figure{
+    width: 100%;
+}
 /** skills */
 #skills{
     text-align: center;
@@ -214,10 +228,12 @@ main{
     justify-content: center;
     gap: 87px;
 }
-#featured-work-1, #featured-work-2{
-    border: solid black;
-    width: 438px;
+#featured-work-1 > img, #featured-work-2 > img,.profile-pic > figure > img{
+    width: 100%;
     height: 380px;
+}
+#featured-work-1 > img, #featured-work-2 > img{
+    border: solid black;
 }
 
 /** Contact section*/
@@ -325,8 +341,18 @@ footer p{
     }
     /** about media queries */
     .about-info{
+        grid-template-areas:
+                'profile-pic'
+                'about-desc';
         height: auto;
-        width: auto;
+        gap: 0;
+        justify-content: center;
+    }
+    .about-desc{
+        margin: 2em;
+    }
+    .profile-pic >figure{
+        width: 446px;
     }
 
 }
@@ -355,14 +381,13 @@ footer p{
     /** about media queries*/
 
     .about-info{
-        grid-template-areas:
-                'profile-pic'
-                'about-desc';
         height: auto;
         padding: 20px;
 
     }
-
+    .profile-pic >figure{
+        width: 70%;
+    }
     /* skills media queries*/
     #skills{
         text-align: left;
@@ -410,5 +435,21 @@ footer p{
         line-height: 10px;
     }
 
+    /** about media queries*/
 
+    .profile-pic-figure{
+       padding: 0px;
+        height: 200px !important;
+    }
+
+
+    #featured-work-1 > img, #featured-work-2 > img, .profile-pic > figure > img {
+        width: 100%;
+    }
+
+    /** media queries for contact */
+    .contact-form ,.address{
+        width: auto;
+        height: auto;
+    }
 }
