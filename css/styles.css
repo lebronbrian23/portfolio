@@ -448,8 +448,12 @@ footer p{
     }
 
     /** media queries for contact */
-    .contact-form ,.address{
-        width: auto;
+    .contact-form , .address{
+        width: 370px;
         height: auto;
+    }
+    .form-submit-btn{
+
+        width: 100%;
     }
 }
