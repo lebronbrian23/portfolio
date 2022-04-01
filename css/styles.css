@@ -8,6 +8,7 @@
  */
 html {
     box-sizing:border-box; /* content-box is default */
+    scroll-padding-top: 100px;
 }
 *, *::before, *::after {
     box-sizing:border-box;
@@ -54,6 +55,8 @@ p{
 figcaption{
     font-size: 14px;
 }
+
+
 /**Header styles */
 
 #logo{
@@ -121,7 +124,6 @@ main{
 }
 #banner-text{
     font-size: 24px;
-    font-style: normal;
     line-height: 30px;
     color: #fff;
     position: absolute;
@@ -352,7 +354,6 @@ footer p{
 @media screen and (max-width: 720px) {
 
     /*banner media queries*/
-
     .banner-image{
       width: 100%;
     }
@@ -410,7 +411,10 @@ footer p{
 }
 
 @media screen and (max-width: 380px) {
-
+    /** General utility media queries*/
+    span , label{
+        font-size:18px;
+    }
     /*banner media queries*/
     .banner-image{
         height: 300px;
