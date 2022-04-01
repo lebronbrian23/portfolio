@@ -418,7 +418,10 @@ footer p{
                 'address'
                 'contact-form';
     }
-
+    .contact-form , .address{
+        width: 370px;
+        height: auto;
+    }
 }
 
 @media screen and (max-width: 380px) {
